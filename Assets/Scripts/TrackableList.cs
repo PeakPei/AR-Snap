@@ -5,27 +5,24 @@ using Vuforia;
 
 
 /// <summary>
-/// Ryan Hall & Arif Khan| 21:40 - 00:41 |  18/04/2018 - 19/04/2018 
+/// Ryan Hall & Arif Khan| 21:40 - 00:51 |  18/04/2018 - 24/04/2018 
 /// </summary>
 public class TrackableList : MonoBehaviour
 {
-    List<string> cardTypeLet = new List<string>();
-    List<int> cardTypeNum = new List<int>();
+    string cardA = "n"; //store card ontop of pile
+    string cardB = "n"; //store card 2nd to top card
 
     string cardName;
     string cardTypeTemp;    //store type in string before parsing
     int cardTempNum;        //after parse move into temporary integer
     bool isNum;             //boolean for try parse
-    int indexLet;
-    int indexNum;
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
-		
-	}
 
-    // Update is called once per frame
+    }
+
     void Update()
     {
         // Get the Vuforia StateManager
@@ -45,31 +42,26 @@ public class TrackableList : MonoBehaviour
             {
                 cardName = card.TrackableName.ToString();                   //turns trackable name into string and stores it in card name
                 cardTypeTemp = cardName[cardName.Length - 1].ToString();    //gets last char off of cardname string and converts char into string to store in to cardtypetemp
-
-                isNum = int.TryParse(cardTypeTemp, out cardTempNum);    //try parse cardtemp, if false add to letter list, if true add to number list
-                if (isNum == true)
+                
+                    Debug.Log("Card registed:" + cardTypeTemp);
+                
+               if(cardA == "n") //if cardA is marked empty
                 {
-                    Debug.Log("Card is a number" + cardTypeNum.Count);
-                    cardTypeNum.Add(cardTempNum);
+                    cardA = cardTypeTemp;   //set cardA to card that has just been read
                 }
-                else
+               else if(cardA != "n"  && cardB == "n")   //if card is not marked empty and card B is marked empty
                 {
-                    Debug.Log("Card is a letter" + cardTypeLet.Count);
-                    cardTypeLet.Add(cardTypeTemp);
+                    cardB = cardTypeTemp;   //set cardB to the card just read
                 }
-
-
-                indexNum = cardTypeNum.Count;
-                indexLet = cardTypeLet.Count;
-                //if statements for length of lists to be more than 1 & if top 2 cards are the same type
-                if (cardTypeNum.Count >= 2 && cardTypeNum[--indexNum] == cardTypeNum[indexNum])
-                {
-                    Debug.Log("Snap numbers" + cardTypeNum[--indexNum] + cardTypeNum[indexNum]);    //output to debug
+               else if(cardA != "n" && cardB != "n") //if card a and card B are both marked not empty
+                {   
+                    cardB = cardA;  //set card b to card a, storing the most recent card
+                    cardA = cardTypeTemp;   //set card a to the card just read
                 }
-                  
-                if (cardTypeLet.Count >= 2 && cardTypeLet[--indexLet] == cardTypeLet[indexLet])
+               
+                if (cardA == cardB) //if most recent card and top card are equal types
                 {
-                    Debug.Log("Snap letters" + cardTypeLet[--indexLet] + cardTypeLet[indexLet]);   //output to debug
+                    Debug.Log("Snap letters" + cardA + cardB);   //output to debug
                 }
             }
         }

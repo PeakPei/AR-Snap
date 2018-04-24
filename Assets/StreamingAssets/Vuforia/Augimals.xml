@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="snapSheepSurprisedD" size="1.000000 1.000000" />
+    <ImageTarget name="snapSheepScaredE" size="1.000000 1.000000" />
+    <ImageTarget name="snapSheepSadB" size="1.000000 1.000000" />
+    <ImageTarget name="snapSheepHappyA" size="1.000000 1.000000" />
+    <ImageTarget name="snapSheepAngryC" size="1.000000 1.000000" />
+    <ImageTarget name="snapPigSurprisedD" size="1.000000 1.000000" />
+    <ImageTarget name="snapPigScaredE" size="1.000000 1.000000" />
+    <ImageTarget name="snapPigSadB" size="1.000000 1.000000" />
+    <ImageTarget name="snapPigHappyA" size="1.000000 1.000000" />
+    <ImageTarget name="snapPigAngryC" size="1.000000 1.000000" />
+    <ImageTarget name="snapPandaSurprisedD" size="1.000000 1.000000" />
+    <ImageTarget name="snapPandaScaredE" size="1.000000 1.000000" />
+    <ImageTarget name="snapPandaSadB" size="1.000000 1.000000" />
+    <ImageTarget name="snapPandaHappyA" size="1.000000 1.000000" />
+    <ImageTarget name="snapPandaAngryC" size="1.000000 1.000000" />
+    <ImageTarget name="snapMonkeySurprisedD" size="1.000000 1.000000" />
+    <ImageTarget name="snapMonkeyScaredE" size="1.000000 1.000000" />
+    <ImageTarget name="snapMonkeySadB" size="1.000000 1.000000" />
+    <ImageTarget name="snapMonkeyHappyA" size="1.000000 1.000000" />
+    <ImageTarget name="snapMonkeyAngryC" size="1.000000 1.000000" />
+    <ImageTarget name="snapHippoSurprisedD" size="1.000000 1.000000" />
+    <ImageTarget name="snapHippoScaredE" size="1.000000 1.000000" />
+    <ImageTarget name="snapHippoSadB" size="1.000000 1.000000" />
+    <ImageTarget name="snapHippoHappyA" size="1.000000 1.000000" />
+    <ImageTarget name="snapHippoAngryC" size="1.000000 1.000000" />
+    <ImageTarget name="snapFrogSurprisedD" size="1.000000 1.000000" />
+    <ImageTarget name="snapFrogScaredE" size="1.000000 1.000000" />
+    <ImageTarget name="snapFrogSadB" size="1.000000 1.000000" />
+    <ImageTarget name="snapFrogHappyA" size="1.000000 1.000000" />
+    <ImageTarget name="snapFrogAngryC" size="1.000000 1.000000" />
+    <ImageTarget name="snapFoxSurprisedD" size="1.000000 1.000000" />
+    <ImageTarget name="snapFoxScaredE" size="1.000000 1.000000" />
+    <ImageTarget name="snapFoxSadB" size="1.000000 1.000000" />
+    <ImageTarget name="snapFoxHappyA" size="1.000000 1.000000" />
+    <ImageTarget name="snapFoxAngryC" size="1.000000 1.000000" />
+    <ImageTarget name="snapDogSurprisedD" size="1.000000 1.000000" />
+    <ImageTarget name="snapDogScaredE" size="1.000000 1.000000" />
+    <ImageTarget name="snapDogSadB" size="1.000000 1.000000" />
+    <ImageTarget name="snapDogHappyA" size="1.000000 1.000000" />
+    <ImageTarget name="snapDogAngryC" size="1.000000 1.000000" />
+    <ImageTarget name="snapCowSurprisedD" size="1.000000 1.000000" />
+    <ImageTarget name="snapCowScaredE" size="1.000000 1.000000" />
+    <ImageTarget name="snapCowSadB" size="1.000000 1.000000" />
+    <ImageTarget name="snapCowHappyA" size="1.000000 1.000000" />
+    <ImageTarget name="snapCowAngryC" size="1.000000 1.000000" />
+    <ImageTarget name="snapBearSurprisedD" size="1.000000 1.000000" />
+    <ImageTarget name="snapBearScaredE" size="1.000000 1.000000" />
+    <ImageTarget name="snapBearSadB" size="1.000000 1.000000" />
+    <ImageTarget name="snapBearHappyA" size="1.000000 1.000000" />
+    <ImageTarget name="snapBearAngryC" size="1.000000 1.000000" />
+  </Tracking>
+</QCARConfig>
